@@ -1,6 +1,6 @@
 @echo off
 echo Re-Creating Database (cms-db)
-sqlcmd.exe -i CMS.Database
+sqlcmd.exe -i CMS.Database.sql
 
 echo Creating USER DEFINED FUNCTIONS
 sqlcmd.exe -i UserDefinedFunction\dbo.AddWorkDays.UserDefinedFunction.sql
@@ -123,4 +123,4 @@ sqlcmd.exe -i StoredProcedure\dbo.automateSavingsInterests.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.getMemberStatus.StoredProcedure.sql
 
 echo Inserting DUMMY DATA
-sqlcmd.exe -i CMS.DATA
+sqlcmd.exe -i CMS.DATA.sql
