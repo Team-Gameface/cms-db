@@ -60,8 +60,9 @@ sqlcmd.exe -i Table\dbo.PAYMENT_FEE.Table.sql
 sqlcmd.exe -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -i Table\dbo.LOAN_AMNESTY.Table.sql
 
-echo -SYSTEM TABLES (1 Table/s)
+echo -SYSTEM TABLES (2 Table/s)
 sqlcmd.exe -i Table\dbo.EMPLOYEE.Table.sql
+sqlcmd.exe -i Table\dbo.COMPANY.Table.sql
 
 echo Creating STORED PROCEDURES
 sqlcmd.exe -i StoredProcedure\dbo.insertAmnesty.StoredProcedure.sql
@@ -69,6 +70,7 @@ sqlcmd.exe -i StoredProcedure\dbo.insertAmortizationPayment.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertCharges.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertClassification.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertComaker.StoredProcedure.sql
+sqlcmd.exe -i StoredProcedure\dbo.insertCompany.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertContribution.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertDormancy.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertEarlyWithdrawal.StoredProcedure.sql
