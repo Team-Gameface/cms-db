@@ -21,6 +21,7 @@ sqlcmd.exe -i Table\dbo.MEMBER_TYPE_SAVINGS_TYPE.Table.sql
 sqlcmd.exe -i Table\dbo.MAINTAINING_BALANCE.Table.sql
 sqlcmd.exe -i Table\dbo.DORMANCY.Table.sql
 sqlcmd.exe -i Table\dbo.INTEREST_RATE.Table.sql
+sqlcmd.exe -i Table\dbo.TIMED_DEPOSIT_INTEREST.Table.sql
 sqlcmd.exe -i Table\dbo.EARLY_WITHDRAWAL.Table.sql
 
 echo -LOAN MAINTENANCE TABLES (9 Table/s)
@@ -101,6 +102,7 @@ sqlcmd.exe -i StoredProcedure\dbo.insertTermination.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertTermOfPayment.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertTimeDeposit.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.insertTimeDepositDetails.StoredProcedure.sql
+sqlcmd.exe -i StoredProcedure\dbo.insertTimeDepositInterest.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.SpInsert_MinimumCapitalContribution.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.updateCharges.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.updateClass.StoredProcedure.sql
@@ -117,6 +119,7 @@ sqlcmd.exe -i StoredProcedure\dbo.updateMemberType.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.updatePenalty.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.updateSavingsAccountType.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.updateTermOfPayment.StoredProcedure.sql
+sqlcmd.exe -i StoredProcedure\dbo.updateTimeDepositInterest.StoredProcedure.sql
 
 echo Creating AUTOMATION STORED PROCEDURES
 sqlcmd.exe -i StoredProcedure\dbo.automateCheckDormantAccounts.StoredProcedure.sql
@@ -125,4 +128,3 @@ sqlcmd.exe -i StoredProcedure\dbo.automateSavingsInterests.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.getMemberStatus.StoredProcedure.sql
 
 echo Inserting DUMMY DATA
-sqlcmd.exe -i CMS.DATA.sql
