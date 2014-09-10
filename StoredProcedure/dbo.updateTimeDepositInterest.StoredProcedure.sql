@@ -1,12 +1,13 @@
 USE [CMS]
 GO
 
-/****** Object:  StoredProcedure [dbo].[updateTimeDepositInterest]    Script Date: 09/10/2014 13:36:08 ******/
+/****** Object:  StoredProcedure [dbo].[updateTimeDepositInterest]    Script Date: 09/10/2014 16:55:35 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 CREATE PROCEDURE [dbo].[updateTimeDepositInterest](
@@ -15,6 +16,7 @@ AS
 BEGIN
 	UPDATE TIME_DEPOSIT_INTEREST SET InterestRate = @InterestRate, NoDays = @NoDays, MinimumRange = @MinimumRange, MaximumRange = @MaximumRange, Status = @Status, DateModified = CURRENT_TIMESTAMP WHERE InterestId = @Id;
 END
+
 
 GO
 
