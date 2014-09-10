@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[TIME_DEPOSIT_INTEREST]    Script Date: 09/09/2014 23:15:07 ******/
+/****** Object:  Table [dbo].[TIME_DEPOSIT_INTEREST]    Script Date: 09/10/2014 13:36:47 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,6 +10,7 @@ GO
 
 CREATE TABLE [dbo].[TIME_DEPOSIT_INTEREST](
 	[InterestId] [int] IDENTITY(1,1) NOT NULL,
+	[NoDays] [int] NOT NULL,
 	[InterestRate] [decimal](7, 4) NOT NULL,
 	[MinimumRange] [decimal](18, 2) NOT NULL,
 	[MaximumRange] [decimal](18, 2) NOT NULL,
