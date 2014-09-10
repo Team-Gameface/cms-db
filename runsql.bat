@@ -64,6 +64,7 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 echo -SYSTEM TABLES (2 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.EMPLOYEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMPANY.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_SAVINGS_ACCOUNT_SETTINGS.Table.sql
 
 echo Creating STORED PROCEDURES
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmnesty.StoredProcedure.sql
@@ -88,6 +89,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMember.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberCapitalPassbook.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberLoanPassbook.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberSavingsAccount.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberSavingsAccountSettings.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberSavingsPassbook.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberType.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertMemberTypeSavings.StoredProcedure.sql
@@ -115,6 +117,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateLoanInterestRate.StoredProc
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateLoanType.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMaintainingBalance.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMember.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMemberSavingsAccountSettings.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMemberType.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updatePenalty.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateSavingsAccountType.StoredProcedure.sql
