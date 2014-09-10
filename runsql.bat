@@ -140,4 +140,14 @@ sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.DORMANCY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.TIME_DEPOSIT_INTEREST.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.EARLY_WITHDRAWAL.Table.sql
 
+echo -MEMBER TRANSACTION
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_CAPITAL_PASSBOOK.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_LOAN_PASSBOOK.Table.sql
+
+echo -SAVINGS TRANSACTION
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.SAVINGS_ACCOUNT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SAVINGS_ACCOUNT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SAVINGS_PASSBOOK.Table.sql
+
 pause
