@@ -128,4 +128,16 @@ sqlcmd.exe -i StoredProcedure\dbo.automateSavingsInterests.StoredProcedure.sql
 sqlcmd.exe -i StoredProcedure\dbo.getMemberStatus.StoredProcedure.sql
 
 echo Inserting DUMMY DATA
+echo -MEMBER MAINTENANCE
+sqlcmd.exe -i DummyData\dbo.MEMBER_TYPE.Table.sql
+
+echo -SAVINGS MAINTENANCE
+sqlcmd.exe -i DummyData\dbo.SAVINGS_ACCOUNT_TYPE.Table.sql
+sqlcmd.exe -i DummyData\dbo.MEMBER_TYPE_SAVINGS_TYPE.Table.sql
+sqlcmd.exe -i DummyData\dbo.INTEREST_RATE.Table.sql
+sqlcmd.exe -i DummyData\dbo.MAINTAINING_BALANCE.Table.sql
+sqlcmd.exe -i DummyData\dbo.DORMANCY.Table.sql
+sqlcmd.exe -i DummyData\dbo.TIME_DEPOSIT_INTEREST.Table.sql
+sqlcmd.exe -i DummyData\dbo.EARLY_WITHDRAWAL.Table.sql
+
 pause
