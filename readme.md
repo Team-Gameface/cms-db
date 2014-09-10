@@ -8,9 +8,13 @@ SUMMARY
 - Stored Procedures
 - User Defined Functions
 - Automation
+- Dummy Data
 
 HOW TO USE
 ============================================================
-Download and Run runsql.bat
+Clone REPO
+Edit runsql.bat with Notepad
+Replace -S parameter value with your SERVER INSTANCE NAME
+Save and Run runsql.bat
 THIS REPO IS FOR STUDENT PURPOSES ONLY
 ============================================================
