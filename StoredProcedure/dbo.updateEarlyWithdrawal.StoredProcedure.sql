@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[updateEarlyWithdrawal](
-	@InterestReduction AS DECIMAL(7, 4), @TermsElapsedFrom AS INT, @TermsElapsedTo AS INT, @Status AS INT)
+	@InterestReduction AS DECIMAL(7, 4), @TermsElapsedFrom AS INT, @TermsElapsedTo AS INT, @Status AS INT, @Id AS INT)
 AS
 BEGIN
 	UPDATE EARLY_WITHDRAWAL SET InterestReduction = @InterestReduction, TermsElapsedFrom = @TermsElapsedFrom, TermsElapsedTo = @TermsElapsedTo, Status = @Status, DateModified = CURRENT_TIMESTAMP WHERE EarlyWithdrawalId = @Id;
