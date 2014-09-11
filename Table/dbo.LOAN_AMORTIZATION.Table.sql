@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[LOAN_AMORTIZATION]    Script Date: 09/10/2014 14:32:57 ******/
+/****** Object:  Table [dbo].[LOAN_AMORTIZATION]    Script Date: 09/11/2014 13:57:15 ******/
 SET ANSI_NULLS ON
 GO
 
