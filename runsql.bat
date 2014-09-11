@@ -15,7 +15,7 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_TYPE_STATUS.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.FEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_TYPE_FEE.Table.sql
 
-echo -SAVINGS MAINTENANCE TABLES (6 Table/s)
+echo -SAVINGS MAINTENANCE TABLES (7 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.SAVINGS_ACCOUNT_TYPE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_TYPE_SAVINGS_TYPE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MAINTAINING_BALANCE.Table.sql
@@ -51,17 +51,18 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.TIME_DEPOSIT.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.TIME_DEPOSIT_DETAILS.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.TERMINATION.Table.sql
 
-echo -LOAN TRANSACTION TABLES (8 Table/s)
+echo -LOAN TRANSACTION TABLES (9 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMAKER.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMORTIZATION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PROPERTY_COLLATERAL.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_AMORTIZATION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_FEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 
-echo -SYSTEM TABLES (2 Table/s)
+echo -SYSTEM TABLES (3 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.EMPLOYEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMPANY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_SAVINGS_ACCOUNT_SETTINGS.Table.sql
