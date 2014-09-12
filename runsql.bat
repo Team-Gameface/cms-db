@@ -62,8 +62,8 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_FEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 
-echo -SYSTEM TABLES (3 Table/s)
-sqlcmd.exe -S AGAPHETOS -i Table\dbo.EMPLOYEE.Table.sql
+echo -SYSTEM TABLES (4 Table/s)
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.SYSTEM_USERS.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMPANY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_SAVINGS_ACCOUNT_SETTINGS.Table.sql
 
@@ -101,6 +101,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertSavingsAccount.StoredProced
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertSavingsAccountType.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertSavingsTermination.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertSavingsTransaction.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertSystemUser.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTermination.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTermOfPayment.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDeposit.StoredProcedure.sql
@@ -122,6 +123,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMemberSavingsAccountSetting
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateMemberType.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updatePenalty.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateSavingsAccountType.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateSystemUser.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateTermOfPayment.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateTimeDepositInterest.StoredProcedure.sql
 
