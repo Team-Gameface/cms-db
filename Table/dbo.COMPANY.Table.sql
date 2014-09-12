@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[COMPANY]    Script Date: 09/01/2014 12:26:14 ******/
+/****** Object:  Table [dbo].[COMPANY]    Script Date: 09/12/2014 12:11:32 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -16,11 +16,11 @@ CREATE TABLE [dbo].[COMPANY](
 	[CompanyName] [varchar](50) NOT NULL,
 	[AccreditationNo] [varchar](50) NULL,
 	[CompanyAddress] [varchar](100) NOT NULL,
-	[CompanyLogo] [varbinary](max) NOT NULL,
+	[CompanyLogo] [varbinary](max) NULL,
 	[Telephone] [varchar](10) NULL,
 	[Cellphone] [varchar](11) NULL,
 	[Email] [varchar](50) NULL,
-	[Status] [bit] NOT NULL CONSTRAINT [DF_COMPANY_Status]  DEFAULT ((1)),
+	[Status] [bit] NOT NULL,
 	[DateCreated] [datetime] NOT NULL,
  CONSTRAINT [PK_Company] PRIMARY KEY CLUSTERED 
 (
@@ -31,5 +31,8 @@ CREATE TABLE [dbo].[COMPANY](
 GO
 
 SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[COMPANY] ADD  CONSTRAINT [DF_COMPANY_Status]  DEFAULT ((1)) FOR [Status]
 GO
 
