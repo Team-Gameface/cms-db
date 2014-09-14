@@ -74,6 +74,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertCharges.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertClassification.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertComaker.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertCompany.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertCompanyNoLogo.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertContribution.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertDormancy.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertEarlyWithdrawal.StoredProcedure.sql
@@ -126,6 +127,8 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateSavingsAccountType.StoredPr
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateSystemUser.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateTermOfPayment.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateTimeDepositInterest.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateUserDetails.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateUserDetailsNoPicture.StoredProcedure.sql
 
 echo Creating AUTOMATION STORED PROCEDURES
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.automateCheckDormantAccounts.StoredProcedure.sql
