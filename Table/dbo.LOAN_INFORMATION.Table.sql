@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[LOAN_INFORMATION]    Script Date: 09/10/2014 14:33:13 ******/
+/****** Object:  Table [dbo].[LOAN_INFORMATION]    Script Date: 7/3/2015 9:13:39 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -24,6 +24,10 @@ CREATE TABLE [dbo].[LOAN_INFORMATION](
 	[DateFiled] [date] NOT NULL,
 	[DateApproved] [date] NOT NULL,
 	[MaturityDate] [date] NOT NULL,
+	[LessCharges] [decimal](10, 2) NOT NULL,
+	[LessLoanBalance] [decimal](10, 2) NOT NULL,
+	[LessPenalties] [decimal](10, 2) NOT NULL,
+	[LessInterest] [decimal](10, 2) NOT NULL,
 	[NetLoanProceeds] [decimal](15, 2) NOT NULL,
 	[isCleared] [bit] NOT NULL,
 	[isAmnestized] [bit] NOT NULL,

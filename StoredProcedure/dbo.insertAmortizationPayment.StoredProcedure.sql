@@ -1,12 +1,13 @@
 USE [CMS]
 GO
 
-/****** Object:  StoredProcedure [dbo].[insertAmortizationPayment]    Script Date: 09/11/2014 13:57:38 ******/
+/****** Object:  StoredProcedure [dbo].[insertAmortizationPayment]    Script Date: 7/3/2015 9:14:19 AM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 
@@ -23,6 +24,7 @@ INSERT INTO PAYMENT(PaymentType, PaymentDate, Amount, Penalty, Interest, hasInte
 VALUES (@PaymentType, CURRENT_TIMESTAMP, @AmountPaid, @Penalty, @Interest, @hasInterest, @AccountNo, @LoanApplicationId, @isFullyPaid)
 
 END
+
 
 
 
