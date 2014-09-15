@@ -69,6 +69,7 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 
 echo Creating STORED PROCEDURES
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getReceiptDetails.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmnesty.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmortizationPayment.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAuditLog.StoredProcedure.sql
@@ -110,6 +111,7 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTermOfPayment.StoredProcedu
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDeposit.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDepositDetails.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDepositInterest.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.selectTransactions.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.SpInsert_MinimumCapitalContribution.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateCharges.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateClass.StoredProcedure.sql
