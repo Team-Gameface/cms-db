@@ -35,6 +35,12 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_TYPE_PENALTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MINIMUM_CAPITAL_CONTRIBUTION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.AMNESTY.Table.sql
 
+echo -SYSTEM TABLES (4 Table/s)
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.SYSTEM_USERS.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.AUDIT_LOG.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMPANY.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_SAVINGS_ACCOUNT_SETTINGS.Table.sql
+
 echo -MEMBER TRANSACTION TABLES (4 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_CAPITAL_PASSBOOK.Table.sql
@@ -62,14 +68,10 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_FEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 
-echo -SYSTEM TABLES (4 Table/s)
-sqlcmd.exe -S AGAPHETOS -i Table\dbo.SYSTEM_USERS.Table.sql
-sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMPANY.Table.sql
-sqlcmd.exe -S AGAPHETOS -i Table\dbo.MEMBER_SAVINGS_ACCOUNT_SETTINGS.Table.sql
-
 echo Creating STORED PROCEDURES
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmnesty.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmortizationPayment.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAuditLog.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertCharges.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertClassification.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertComaker.StoredProcedure.sql
