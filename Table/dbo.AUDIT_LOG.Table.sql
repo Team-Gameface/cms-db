@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[AUDIT_LOG]    Script Date: 09/15/2014 10:41:52 ******/
+/****** Object:  Table [dbo].[AUDIT_LOG]    Script Date: 09/15/2014 11:40:30 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -13,10 +13,10 @@ GO
 
 CREATE TABLE [dbo].[AUDIT_LOG](
 	[LogId] [int] IDENTITY(1,1) NOT NULL,
-	[Activity] [varchar](50) NOT NULL,
-	[Module] [varchar](50) NOT NULL,
-	[LogTime] [datetime] NOT NULL,
+	[Activity] [varchar](100) NOT NULL,
+	[Module] [varchar](100) NOT NULL,
 	[UserId] [varchar](11) NOT NULL,
+	[LogTime] [datetime] NOT NULL,
  CONSTRAINT [PK_AUDIT_LOG] PRIMARY KEY CLUSTERED 
 (
 	[LogId] ASC
