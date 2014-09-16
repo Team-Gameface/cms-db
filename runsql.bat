@@ -69,7 +69,11 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMNESTY.Table.sql
 
 echo Creating STORED PROCEDURES
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getMemberPopulation.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getReceiptDetails.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getTotalLoanReleases.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getTotalSavings.StoredProcedure.sql
+sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getTotalShare.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmnesty.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAmortizationPayment.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertAuditLog.StoredProcedure.sql
