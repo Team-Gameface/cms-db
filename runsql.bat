@@ -24,7 +24,7 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.INTEREST_RATE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.TIME_DEPOSIT_INTEREST.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.EARLY_WITHDRAWAL.Table.sql
 
-echo -LOAN MAINTENANCE TABLES (9 Table/s)
+echo -LOAN MAINTENANCE TABLES (8 Table/s)
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_TYPE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_TYPE_AVAILABILITY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INTEREST_RATE.Table.sql
@@ -32,7 +32,6 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.CHARGES.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_TYPE_CHARGES.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PENALTY.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_TYPE_PENALTY.Table.sql
-sqlcmd.exe -S AGAPHETOS -i Table\dbo.MINIMUM_CAPITAL_CONTRIBUTION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.AMNESTY.Table.sql
 
 echo -SYSTEM TABLES (4 Table/s)
@@ -116,7 +115,6 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDeposit.StoredProcedure
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDepositDetails.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.insertTimeDepositInterest.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.selectTransactions.StoredProcedure.sql
-sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.SpInsert_MinimumCapitalContribution.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateCharges.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateClass.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.updateDormancy.StoredProcedure.sql
