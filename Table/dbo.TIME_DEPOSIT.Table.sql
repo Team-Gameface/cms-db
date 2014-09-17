@@ -1,7 +1,7 @@
 USE [CMS]
 GO
 
-/****** Object:  Table [dbo].[TIME_DEPOSIT]    Script Date: 09/10/2014 20:50:08 ******/
+/****** Object:  Table [dbo].[TIME_DEPOSIT]    Script Date: 09/17/2014 23:23:58 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -17,7 +17,7 @@ CREATE TABLE [dbo].[TIME_DEPOSIT](
 	[DepositAmount] [decimal](18, 2) NOT NULL,
 	[Maturity] [date] NOT NULL,
 	[DateCreated] [datetime] NOT NULL,
-	[Status] [bigint] NOT NULL,
+	[Status] [bit] NOT NULL,
  CONSTRAINT [PK_TIME_DEPOSIT_1] PRIMARY KEY CLUSTERED 
 (
 	[CertificateNo] ASC
