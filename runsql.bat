@@ -62,6 +62,7 @@ sqlcmd.exe -S AGAPHETOS -i Table\dbo.COMAKER.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_AMORTIZATION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PROPERTY_COLLATERAL.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_BALANCE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_AMORTIZATION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.PAYMENT_FEE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i Table\dbo.LOAN_INFORMATION_AMNESTY.Table.sql
