@@ -12,9 +12,10 @@ SUMMARY
 
 HOW TO USE
 ============================================================
-Clone REPO
-Edit runsql.bat with Notepad
+Download zip
+For Database Only - Edit createDatabase.bat with Notepad
+For DummyData - Edit createDatabase.bat with Notepad
 Replace -S parameter value with your SERVER INSTANCE NAME
-Save and Run runsql.bat
+Save and Run Batch File
 THIS REPO IS FOR STUDENT PURPOSES ONLY
 ============================================================
