@@ -26,6 +26,18 @@ sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.INTEREST_RATE.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.TIME_DEPOSIT_INTEREST.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.EARLY_WITHDRAWAL.Table.sql
 
+echo -MEMBER DATA
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_CAPITAL_PASSBOOK.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_LOAN_PASSBOOK.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SHARECAPITAL.Table.sql
+
+echo -SAVINGS ACCOUNT DATA
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.SAVINGS_ACCOUNT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SAVINGS_ACCOUNT.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SAVINGS_PASSBOOK.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.SAVINGS_TRANSACTION.Table.sql
+
 echo -AUDIT LOG Data
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.AUDIT_LOG.Table.sql
 pause
