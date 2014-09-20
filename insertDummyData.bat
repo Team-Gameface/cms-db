@@ -40,10 +40,16 @@ sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.MEMBER_SAVINGS_PASSBOOK.Table.sql
 echo -TIME DEPOSIT DATA
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.TIME_DEPOSIT.Table.sql
 
+echo -TIME DEPOSIT DATA
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.LOAN_INFORMATION.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.LOAN_AMORTIZATION.Table.sql
+
 echo -TRANSACTION Data
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.SAVINGS_TRANSACTION.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.PAYMENT.Table.sql
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.PAYMENT_FEE.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.PAYMENT_AMORTIZATION.Table.sql
+sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.PAYMENT_BALANCE.Table.sql
 
 echo -AUDIT LOG Data
 sqlcmd.exe -S AGAPHETOS -i DummyData\dbo.AUDIT_LOG.Table.sql
