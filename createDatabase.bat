@@ -142,4 +142,6 @@ sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.automateCheckDormantAccounts.Stor
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.automateMaintainingBalances.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.automateSavingsInterests.StoredProcedure.sql
 sqlcmd.exe -S AGAPHETOS -i StoredProcedure\dbo.getMemberStatus.StoredProcedure.sql
+
+echo COMPLETE!
 pause
